@@ -1,0 +1,18 @@
+.container-footer {
+    background-color: $color-secundario;
+    font-family: $font-family;
+    font-size: 1.5em;
+    padding: 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .nav-link {
+        margin-left: 1em;
+        .i-style {
+            color: $color-primario;
+            font-size: 1em;
+        }
+
+    }
+}
