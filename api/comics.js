@@ -4,8 +4,8 @@ const apiPrivate = '36e9d123cce0e5998a27a9394da7867691023eb9';
 
 
 
-const getComics = async (offset, orderBy) => {
-    const response = await fetch(`${baseUrl}/comics?apikey=${apiKey}&offset=${offset}&orderBy=${orderBy}`)
+const getComics = async (offset, orderBy, orderType) => {
+    const response = await fetch(`${baseUrl}/${orderType}?apikey=${apiKey}&offset=${offset}&orderBy=${orderBy}`)
     const data = await response.json()
     return data;
 }

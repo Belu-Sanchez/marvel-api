@@ -19,18 +19,22 @@
 
 <body>
 
+
+
     <header>
         <div>
             <div class="container-header">
-                <h1 class="logo">ADA COMICS</h1>
+                <img class="img-logo"
+                    src="./imagenes/logo/[CITYPNG.COM]HD Marvel Neon Logo Transparent PNG - 2500x1219.png" alt="logo">
             </div>
             <div class="imagen-header">
-                <img class="img-banner" src="./vistas/banner.jpg" alt="banner">
             </div>
         </div>
     </header>
 
+
     <main>
+
         <!-- Buscador -->
         <section class="d-flex bd-highlight m-3 p-3 section-buscador">
             <form id="search-comics" action="">
@@ -42,59 +46,49 @@
                     <input type="input" name="search-input" id="search-input">
 
                     <label class="label-busqueda">
-                        <span class="placeholder-busqueda text-secondary"> Ingresá tu búsqueda </span>
+                        <span class="placeholder-busqueda text-secondary" id="placeholder-id"> Ingresá tu búsqueda </span>
                     </label>
 
                 </div>
 
+                <div class="flex-filter">
+                    <div class="p-2 bd-highlight">
+                        <label for="option-tipo" class="form-label fw-bold text-secondary">TIPO</label>
+                        <select id="search-type" name="option-tipo" class="form-select fw-bold"
+                            aria-label="Default select example">
+                            <option value="comics">COMICS</option>
+                            <option value="characters">PERSONAJES</option>
+                        </select>
+                    </div>
 
-                <div class="p-2 bd-highlight">
-                    <label for="option-tipo" class="form-label fw-bold text-secondary">TIPO</label>
-                    <select id="search-type" name="option-tipo" class="form-select fw-bold"
-                        aria-label="Default select example">
-                        <option value="comics">COMICS</option>
-                        <option value="characters">PERSONAJES</option>
-                    </select>
+
+
+                    <div class="p-2 bd-highlight">
+                        <label for="control-order-by" class="form-label fw-bold text-secondary">ORDEN</label>
+                        <select id="control-order-by" name="control-order-by" class="form-select fw-bold comics-select"
+                            aria-label="Default select example">
+                        </select>
+                    </div>
+
+
+                    <button type="submit" class="btn">BUSCAR</button>
                 </div>
-                <div class="p-2 bd-highlight">
-                    <label for="control-order-by" class="form-label fw-bold text-secondary">ORDEN</label>
-                    <select name="control-order-by" id="control-order-by" class="form-select fw-bold comics-select"
-                        aria-label="Default select example">
-                    </select>
-                </div>
-
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </section>
+
 
 
         <!-- Comics -->
         <section id="comics-results"></section>
 
         <!-- Personajes -->
-        <section id="characters-results" class="d-none"></section>
+        <section id="characters-results"></section>
         <section id="characters-detail-comics" class="d-none"></section>
 
         <!-- Paginador -->
         <section id="container-pagination">
-            <!-- <div class="d-flex justify-content-center">
-                <p>Página actual: <span id="pagina-actual"></span></p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <p>Total de páginas: <span id="total-paginas"></span></p>
-            </div> -->
-                                
-            <!-- <div >
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="first-page"><<</a></li>
-                    <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="previus-page"><</a></li>
-                    <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="next-page">></a></li>
-                    <li class="page-item"><a class="page-link text-bg-dark text-white p-3" href="#" id="last-page">>></a></li>
-                </ul>
-            </div>             -->
-        </section>        
-            
+        </section>
+
 
     </main>
 
@@ -103,8 +97,6 @@
         <div class="container-fluid p-0">
             <div class=" navbar container-footer">
                 <div class="text-white d-flex align-self-center">
-                    <a class="nav-link p-1" href="https://github.com/YaninaMedici" target="_blank">Yanina Medici<i
-                            class="fa-brands fa-github i-style"> </i></a>
                     <a class="nav-link p-1" href="https://github.com/Belu-Sanchez" target="_blank">Belu Sanchez<i
                             class="fa-brands fa-github i-style"></i></a>
                 </div>

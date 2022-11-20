@@ -1,0 +1,14 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    .btn{
+        background-color: $color-secundario;
+        color: $color-acento;
+        margin: 0.1em;
+
+
+    }
+    .btn:hover{
+        border: solid $color-secundario;
+                }
+}
